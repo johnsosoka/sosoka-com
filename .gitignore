@@ -3,6 +3,15 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+#intellij
+.idea/
+.DS_Store
+*.iml
+
+# tf
+*.terraform
+*.hcl
+
 # C extensions
 *.so
 
