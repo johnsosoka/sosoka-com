@@ -2,16 +2,13 @@ variable "project_name" {
   default = "sosoka-com"
 }
 
-// WWW and Root
-
-variable "domain_name" {
-  type = string
-  default = "sosoka"
-  description = "My websites domain name"
-}
-
-variable "domain" {
-  type = string
-  default = "com"
-  description = "The domain my site belongs to"
+// All the static sites to create
+variable "websites" {
+  type = map(string)
+  default = {
+    "stage" = "stage.sosoka.com",
+    "www"   = "www.sosoka.com",
+    "root"  = "sosoka.com"
+  }
+  description = "The websites to create"
 }
